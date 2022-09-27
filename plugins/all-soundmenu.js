@@ -16,6 +16,12 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 • Berbicaralah yang sopan & tidak spam
 • Owner Hanya merespon yang berkaitan dengan BOT
 • No Telp`
+       {
+                    urlButton: {
+                        displayText: '📞 Author',
+                        url: '.menu',
+                    }
+                },
 
   let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
 const sections = [
