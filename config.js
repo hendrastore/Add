@@ -1,33 +1,15 @@
-// S C R I P T  O R I  B Y  Bochilgaming 🔭
-// Ditulis Ulang Oleh JAROT OFFC
-// Credits, jangan dihapus atau diubah!
-
-// - - THANKS TO - -
-// • Allah SWT
-// • Nurutomo
-// • Bochilgaming
-// • Rominaru
-// • Kannachann
-// • Jarot Offc
-// • The.Sad.Boy01
-// • Rlxfly
-// • Rasel comel
-// • Oscar-Md
-// • Rismabot offc
-// • Dll
-
-//[!] Jangan Lupa Ganti Ownernya
-
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
+import fetch from 'node-fetch'
 
-/*============= WAKTU =============*/
-let wibh = moment.tz('Asia/Jakarta').format('HH')
-    let wibm = moment.tz('Asia/Jakarta').format('mm')
-    let wibs = moment.tz('Asia/Jakarta').format('ss')
-    let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
+/*⫘⫘⫘⫘ WAKTU ⫘⫘⫘⫘⫘*/
+global.wibh = moment.tz('Asia/Jakarta').format('HH')
+global.wibm = moment.tz('Asia/Jakarta').format('mm')
+global.wibs = moment.tz('Asia/Jakarta').format('ss')
+global.wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+global.wktuwib = `${global.wibh} H ${global.wibm} M ${global.wibs} S`
     
     let d = new Date(new Date + 3600000)
     let locale = 'id'
@@ -44,79 +26,222 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
     })
       
     
-/*============== SOCIAL ==============*/
+/*⫘⫘⫘⫘⫘ MEDIA SOSIAL ⫘⫘⫘⫘*/
+// Kalau gapunya di biarin aja!, atau ga di kasih tanda '-'
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://youtu.be/g9uLzcCOT20' //Link Instagrammu
-global.sgh = 'https://youtu.be/g9uLzcCOT20' //Link Githubmu
-global.sgc = 'https://chat.whatsapp.com/GPMdyM0uDMP789G3IGMHda'
-global.sdc = '_'
-global.stg = ''
-global.syt = '' //Isi Pake Link Discordmu Kalo Gada Biarin aja
-global.snh = 'https://nhentai.net/g/HaramTod🗿' //Hmmm, Ini boleh kalian isi terserah :v
+global.sig = 'https://www.youtube.com/watch?v=uYG-l_i593Q' //Instagram mu
+global.sgh = 'yandex.com //Github mu
+global.swb = 'yandex.com'
+global.sfb = 'yandex.com'
+global.syt = 'yandex.com/'
+global.syt = 'https://www.youtube.com/watch?v=uYG-l_i593Q' //YT Mu
+global.sgc = 'yandex.com' //Group WhatsApp mu
+global.sdc = 'yandex.com' //Discord Mu
+global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
-/*============== PAYMENT ==============*/
-global.pdana = '083181085070' //Nomor Danamu
-global.ppulsa = '085794152433' //Nomor SimCard Yang Kamu Pake
-global.psaweria = 'https://saweria.com/jarotoffc' //Link Saweriamu Kalo Nggada Ketik - aja
+/*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
+global.pdana = '083181085070' //Dana
+global.povo = '083181085070' //Ovo
+global.pgopay = '083181085070' //Gopay
+global.ppulsa = '083181085070' //Pulsa 
+global.ppulsa2 = '085794152433' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
+global.psaweria = 'yandex.com' //Saweria
+global.donate = '〔 Dᴏɴᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕\n\n››╭─〘 *Donasi* 〙\n╭╡📮: Donasi ngab jangan make bot doang.│\n┝‷✧ *Ovo:* 083181085070\n│┝‷✧ *Dana:* 083181085070\n│┝‷✧ *Gopay:* 083181085070\n│╰───···─────\n│⁺◛˖ Ingin Donasi? Chat nomor owner\n╰──────────···───╮'
 
-/*============== NOMOR ==============*/
-global.nomorbot = '6283181085070' //Nomor Bot
-global.nomorown = '6285794152433' //Nomor Owner
-global.namebot = 'HENDRA-MULTIDEVICE'  //Nama Bot
-global.nameown = 'Hendra-Botz-MD'  // Nama Owner
+/*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
+global.nomorbot = '6283181085070' //Nomor Bot mu
+global.nomorown = '6285794152433' //Nomormu
+global.namebot = 'Hendra-Botz-MD' //Nama bot mu
+global.nameown = 'Hendra-Botz-MD' //Nama mu
 
-
-/*============== STAFF ==============*/
+/*⫘⫘⫘⫘GLOBAL FUNCTION⫘⫘⫘⫘⫘*/
+//KALAU MAGER EDIT, MENDING GAUSAH DI APA² IN. SAMA AJA//
+global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰' //Gausah di apa² in
+global.after = 'Bot by yandex.com'
+global.swo = 'https://wa.me/6285794152433'
+global.author = '                © Hendra BOT By Hendra' //Wm author
+global.botintro = 'Hallo, Kenalin saya Hendra BOT Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh *Hendra-Botz-MD* Saya di rilis pada tanggal\n🗓 ️_16/04/2022_'
+global.sallam = '💬 Waalaikumsallam'
+global.thumbBanned = 'https://telegra.ph/file/b810a9fbc18afc1aaa6c8.jpg'
+global.thumbWarn = 'https://telegra.ph/file/38f72943a6f152112d128.jpg'
+global.speed = 'https://telegra.ph/file/733725060ca73e223a0ab.jpg'
+global.ow = 'https://telegra.ph/file/c7537e199429a81410300.jpg'
+global.intro = 'https://telegra.ph/file/ed414f3483c53d25de623.jpg'
+global.donsi = 'https://telegra.ph/file/3851e29e29d9dff9bd776.jpg'
+global.assalam = 'https://telegra.ph/file/867134be21091efeee226.jpg'
+global.collab = 'https://telegra.ph/file/09f8b94f8d820153034e2.jpg'
+global.dand = 'https://telegra.ph/file/7fb83420644e354aa0eec.jpg'
+global.thumbEnable = 'https://telegra.ph/file/8c89c250c1cda88d92b3d.jpg'
+global.runtime = 'https://telegra.ph/file/013ed241e65f0f05850c2.jpg'
+global.serialimg = 'https://telegra.ph/file/7a605596eb04ef6fcd385.jpg'
+global.jlimit = 'https://telegra.ph/file/62405c3952044f73eee6a.jpg'
+global.thumbDidyou = 'https://telegra.ph/file/e27e5468705a73de2328d.jpg'
+global.verify = 'https://telegra.ph/file/ee46d5f5ef0c64839ab70.jpg'
+global.thumbLevelup = 'https://telegra.ph/file/4d4e0b19e3feb1fa4c3cb.jpg'
+global.thumbEror = 'https://telegra.ph/file/430b8f1ae35c655bfee93.jpg'
+global.thumbnailCuaca = 'https://telegra.ph/file/636af9d2fb8194f4dbb94.jpg'
+global.guest = 'https://telegra.ph/file/2b21d69f7566fe5fae922.jpg'
+global.thumbmenfes = 'https://telegra.ph/file/4be6353aeb9057e44825f.jpg'
+/*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6285794152433', '❦ Hendraaaaa 🎐', true] //Ganti jd nomormu sama Namamu
+  ['6285794152433'], //Owner1
+  ['6285794152433'], //Owner2
+  ['6285794152433', 'Hendra-Botz-MD ! 🥶', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
-global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
+global.cheat = [] // ketik .cheat aja
+global.waifu = []
+global.prems = [] // Jangan di isi, Tambahin dari bot nya ketik .addprem @Hendra-Botz-MD 15
 
 
-global.lolkey = 'apikeymu'
-global.xkey = 'APIKEYMU'
-/*============== API ==============*/
+/*⫘⫘⫘⫘ APIKEY ⫘⫘⫘⫘⫘*/
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
+  rey: 'https://server-api-rey.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
   lol: 'https://api.lolhuman.xyz',
+  dhnjing: 'https://dhnjing.xyz',
+  neoxr: 'https://neoxr-api.herokuapp.com',
+  zeks: 'https://api.zeks.xyz',
+  pencarikode: 'https://pencarikode.xyz',
   ana: 'https://anabotofc.herokuapp.com/',
+  amel: 'https://melcanz.com',
+  bsbt: 'https://bsbt-api-rest.herokuapp.com', 
+  hardianto: 'https://hardianto.xyz',
+  botstyle: 'https://botstyle-api.herokuapp.com',
   adiisus: 'https://adiixyzapi.herokuapp.com',
-  violetics : 'https://violetics.pw', 
-  males : 'https://malesin.xyz'
+  LeysCoder: 'https://leyscoders-api.herokuapp.com',
+  kanx: 'https://kannxapi.herokuapp.com/'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'APIKEYMU',
+  'https://api.xteam.xyz': 'APIKEY',
   'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://api.lolhuman.xyz': 'Apikeymu',
+  'https://api.lolhuman.xyz': 'APIKEY',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://violetics.pw': 'beta'
+  'https://api.zeks.xyz': 'APIKEY',
+  'https://pencarikode.xyz': 'pais',
+  'https://api.neoxr.my.id' : '5VC9rvNx',
+  'https://rest-beni.herokuapp.com' : 'benniismaelapikey',
+  'https://melcanz.com' : 'manHkmst',
+  'https://neoxr-api.herokuapp.com': 'yntkts',
+  'https://server-api-rey.herokuapp.com': 'apirey',
+  'https://botstyle-api.herokuapp.com': 'Fa2GhFnr',
+  'https://bsbt-api-rest.herokuapp.com': 'APIKEY',
+  'https://hardianto.xyz': 'hardianto',
+  'https://zenzapis.xyz' : 'f9fccfcff1',
+  'https://hardianto-chan.herokuapp.com' : 'hardianto',
+  'https://leyscoders-api.herokuapp.com': 'APIKEY',
 }
-// Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
+/*Xteam*/
+global.xteamkey = 'APIKEY'
+/*Xcoders*/
+global.xckey = 'BOhjM2hUVn'
+// KATA "APIKEY" GANTI DENGAN APIKEY MU SENDIRI
 
-/*============== WATERMARK ==============*/
-global.wm = '                「 HENDRA-MULTIDEVICE 汉  」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Hendra-Botz-Md˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '⫹⫺  HendraBotz-MD'
-global.botdate = `⫹⫺ 𝗛𝗮𝗿𝗶: ${week} ${date}`
-global.bottime = `𝗪𝗮𝗸𝘁𝘂 : ${wktuwib}`
-global.titlebot = '🎋 ┊ 𝗥𝗣𝗚 ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ'
-global.author = global.wm
-global.logo = 'https://ibb.co/17RY7x9'
+/*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
+//GANTI JANGAN NGASAL.
+global.wm = '                「 赤  Hendra-Botz-MD இ 」' //Wm
+global.wm2 = '➳༻❀Hendra - Ganz❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm3 = '赤 Hendra-Botz-MD'
+global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
+global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
+global.bottime = `𝗪𝗔𝗞𝗧𝗨 : ${wib}`
+global.titlebot = '𝗬𝗧: Hendra-Botz-MD' //Ganti serah lu
 
+/*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
+// INI JUGA GANTI SETERAH MU
+global.logo = 'https://ibb.co/17RY7x9'
+global.thumb = 'https://telegra.ph/file/22abfec5e8c5b3e6596d1.jpg' //Thumbnail nya
+global.thumb2 = 'https://telegra.ph/file/312d5d7a5ad4d4f8b5d7a.jpg' //Thumbnail 2
+global.thumbbc = 'https://telegra.ph/file/3377bec81cd8614917d24.jpg' //Image Bcgcb
+global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
+global.flaaa = [
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
 
+global.thumbnailUrl = [
+'https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg','https://telegra.ph/file/ac4928f0824a2a0492737.jpg',
+'https://telegra.ph/file/6359b013bc7e52c3b346f.jpg','https://telegra.ph/file/d43c89a5d2da72875ec05.jpg',
+'https://telegra.ph/file/7d6c0e35f9c8f52715541.jpg','https://telegra.ph/file/ef4b742d47e6a9115e2ff.jpg',
+'https://telegra.ph/file/55e5af5f33fbd57104187.jpg','https://telegra.ph/file/af236598456b95884bd15.jpg',
+'https://telegra.ph/file/de92ed4a729887ffc974c.jpg','https://telegra.ph/file/00ce42a193b1dbbf907d4.jpg']
 
-/*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/0c6ff83f2adbcf4693314.gif' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/26b515d170f1e599f78a7.jpg'
-global.thumbbc = 'https://telegra.ph/file/05f874dc87f7e27fa8127.jpg' //For broadcast
-global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
+/*Thumbnail*/
+global.hoppai = ['https://telegra.ph/file/f34d76df4a2065af1a5ba.jpg',
+'https://telegra.ph/file/05c1b22ee83bcd7723b4d.jpg',
+'https://telegra.ph/file/1d886f66a44871205335f.jpg',
+'https://telegra.ph/file/54d19a9094dc509370bf9.jpg',
+'https://telegra.ph/file/e649475bcde78a9977ee5.jpg',
+'https://telegra.ph/file/32ba20b6139b129c559c8.jpg',
+'https://telegra.ph/file/948434cda49e4af5d9f11.jpg',
+'https://telegra.ph/file/6f353c68533283fe79871.jpg',
+'https://telegra.ph/file/de268ca9b01101acf2b8a.jpg',
+'https://telegra.ph/file/fc6c5b2ae9a20c4256e7f.jpg',
+'https://telegra.ph/file/efb70bb0988640f841742.jpg',
+'https://telegra.ph/file/77d03fff530a2bcff3bf7.jpg',
+'https://telegra.ph/file/6e4623464a659dd8d902b.jpg',
+'https://telegra.ph/file/685aa39f0cb0f2c4fd85b.jpg',
+'https://telegra.ph/file/10454b9ad693e1eefea58.jpg',
+'https://telegra.ph/file/7de8ce5c290c3d8be0856.jpg',
+'https://telegra.ph/file/8d7c4eadb7a4722747074.jpg',
+'https://telegra.ph/file/ccc5f8eaac0f30919ef6c.jpg',
+'https://telegra.ph/file/95f4b43439d7888f15ea5.jpg',
+'https://telegra.ph/file/9c2a750db555bd2fad1f3.jpg',
+'https://telegra.ph/file/efc5f7e637744fd6bfec2.jpg',
+'https://telegra.ph/file/3a5231aade245665633bd.jpg',
+'https://telegra.ph/file/2ecfc76feb26ec1eab99b.jpg',
+'https://telegra.ph/file/dabb70983b4e833d98344.jpg',
+'https://telegra.ph/file/75193a893e38fc580afe6.jpg',
+'https://telegra.ph/file/217aa0f4ec76273808aa4.jpg',
+'https://telegra.ph/file/8a35d3446b97ae22c7b23.jpg',
+'https://telegra.ph/file/092df720701575a7ceaaa.jpg',
+'https://telegra.ph/file/a65184a676cd648de34c3.jpg',
+'https://telegra.ph/file/180e28807e78419d45537.jpg',
+'https://telegra.ph/file/140eff27be983e0cd6781.jpg',
+'https://telegra.ph/file/1581b791e16d0029e16b5.jpg',
+'https://telegra.ph/file/6a4b36372b4f265bae3bc.jpg',
+'https://telegra.ph/file/093caff422f194f00bc6c.jpg',
+'https://telegra.ph/file/2294b7ab49eca8a8046b2.jpg',
+'https://telegra.ph/file/869224d1c417e8b5c8ff1.jpg',
+'https://telegra.ph/file/a78443f0ee887f46808d7.jpg',
+'https://telegra.ph/file/1889878933264d16c58bf.jpg',
+'https://telegra.ph/file/735aeb47d9c4aa87aaaf3.jpg',
+'https://telegra.ph/file/fcf861516db09dda164e0.jpg',
+'https://telegra.ph/file/355d96d7e06d109435f67.jpg']
+global.hyuri = ['https://telegra.ph/file/5d908f4a17515a15c6202.jpg']
+global.hLokun = ['https://telegra.ph/file/8902f4fc550727a62e99f.jpg',
+'https://telegra.ph/file/6a6a40e924c16a8f0de03.jpg',
+'https://telegra.ph/file/b035d3038a0b124f1d846.jpg',
+'https://telegra.ph/file/9d475f7852bf6f6193c80.jpg']
+global.hloli = ['https://telegra.ph/file/872c360a7104d86752650.jpg',
+'https://telegra.ph/file/f6bbb53620374257bfa51.jpg',
+'https://telegra.ph/file/9b76375f3869440818d57.jpg',
+'https://telegra.ph/file/a78443f0ee887f46808d7.jpg']
+global.hneko = ['https://telegra.ph/file/805a37b1e9a963e7d7ecf.jpg',
+'https://telegra.ph/file/f9c4d97477b647cf57a2b.jpg',
+'https://telegra.ph/file/b6905b77e6c7732592a13.jpg',
+'https://telegra.ph/file/9f82c432d0ba4cfffda9a.png',
+'https://telegra.ph/file/484083949d4bfd763b8cf.jpg']
+global.hbunny = ['https://telegra.ph/file/2b71a8d46d29351479fbc.jpg',
+'https://telegra.ph/file/ae610571b62b5ab876e9c.jpg',
+'https://telegra.ph/file/cc8255d5b989eef587af2.jpg',
+'https://telegra.ph/file/30d2e7375996abd9cfee3.jpg',
+'https://telegra.ph/file/78980c90c44a95a1d30fa.jpg',
+'https://telegra.ph/file/2ac5d8ccf23e73eaa5bfa.jpg']
+global.hbeach = ['https://telegra.ph/file/14ae0ba2da77d74e6b80c.jpg',
+'https://telegra.ph/file/b6905b77e6c7732592a13.jpg',
+'https://telegra.ph/file/9da45a352eb4c40e5d641.jpg',
+'https://telegra.ph/file/59e78846ee365975ee6e3.jpg',
+'https://telegra.ph/file/1bf7dee46b83eb4c41d7d.jpg',
+'https://telegra.ph/file/0525a7929f819cb8278f3.jpg']
 global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1598c29a621.jpg',
 'https://i.pinimg.com/originals/85/4d/bb/854dbbd30304cd69f305352f0183fad0.jpg',
 'https://i.pinimg.com/originals/32/2c/a4/322ca456fa2cdec4b717895a65adfa8d.jpg',
@@ -318,34 +443,39 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 'https://i.pinimg.com/originals/fd/21/41/fd21419275236bb153de3c8dcbbf3bf9.jpg',
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 
-/*============== FlamingText ===========*/
-global.flaaa = [
-'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=', 
-'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
-'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
-'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=',
-'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
-'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='] 
 
-/*============== TEXT ==============*/
-global.wait = '```「▰▰▰▱▱▱▱▱▱▱」Loading...```'
-global.eror = '```404 error```'
+/** Fake Reply */
+global.THUMBNAIL = await (await fetch(global.thumbbc)).buffer()
+global.judul = `Hari ${week}`
+global.body = `𝗪𝗔𝗞𝗧𝗨 : ${wib}`
 
-/*=========== TYPE DOCUMENT ===========*/
-global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
-global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-global.dpdf = 'application/pdf'
-global.drtf = 'text/rtf'
-global.djson = 'application/json'
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
+//global.fla Jangan di ganti
+/*⫘⫘⫘⫘ LOADING ⫘⫘⫘⫘⫘*/
+global.wait = '```[ ! ] wait...```'
+global.eror = '⸨Acsess Danied⸩'
 
-global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
+/*⫘⫘⫘⫘ DOCUMENT ⫘⫘⫘⫘⫘*/
+global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
+global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' 
+global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
+global.dpdf = 'application/pdf' 
+global.drtf = 'text/rtf' 
+global.djson = 'application/json' 
+  
+global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
-/*=========== FAKE SIZE ===========*/
-global.fsizedoc = '99999999999999' // default 10TB
-global.fpagedoc = '999'
+/*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
+global.fsizedoc = '99999999999999' // 10TB
+global.fpagedoc = '999' //Gausah di ganti.
 
-/*=========== HIASAN ===========*/
+/*⫘⫘⫘⫘ BIO OWNER ⫘⫘⫘⫘⫘*/
+global.nameowner = 'Hendra-XD'
+global.umurowner = '15'
+global.asalowner = 'Cirebom, Jawa barat'
+global.nomorowner = 'wa.me/6285794152433'
+global.pacarowner = 'Ga ada pacar'
+/*⫘⫘⫘⫘ HIASAN ⫘⫘⫘⫘⫘*/
 // DEFAULT MENU
 global.dmenut = 'ଓ═┅═━–〈' //top
 global.dmenub = '┊↬' //body
@@ -354,29 +484,34 @@ global.dmenuf = '┗––––––––––✦' //footer
 
 // COMMAND MENU
 global.dashmenu = '┅━━━═┅═❏ *ღ 𝘿𝘼𝙎𝙃𝘽𝙊𝘼𝙍𝘿 ღ* ❏═┅═━━━┅'
-global.cmenut = '╭─❑ 『'                       //top
-global.cmenuh = '』❑─ '                        //header
-global.cmenub = '┃❑ '                            //body
+global.cmenut = '❏––––––『'                       //top
+global.cmenuh = '』––––––'                        //header
+global.cmenub = '┊✧'                            //body
 global.cmenuf = '┗━═┅═━––––––๑\n'                //footer
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
-global.pmenus = '┊'                              //pembatas menu selector
+global.pmenus = '┊'              
 
-global.htki = '––––––『' // Hiasan Titile (KIRI)
-global.htka = '』––––––' // Hiasan Title  (KANAN)
-global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
-global.lolm = 'Ⓛ' //LOGO LIMIT/FREE ON MENU.JS
-global.htjava = '⫹⫺'    //hiasan Doang :v
+global.htki = '––––––⦅' // Hiasan Titile (KIRI)
+global.htka = '⦆––––––' // Hiasan Title  (KANAN)
+global.lopr = '🅟' //LOGO PREMIUM ON MENU.JS
+global.lolm = '🅛' //LOGO FREE ON MENU.JS
+global.htjava = 'இ'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
-/*============== STICKER WM ==============*/
-global.stickpack = '.'
-global.stickauth = `☂︎\nO\nS\nC\nR\nO\nF\C-\n𝗕\n𝗢\n𝗧\n✦\n\n⫹⫺ Whatsapp BOT\nwa.me/${global.nomorbot}`
-global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
-global.packname2 = 'ᴄʀᴇᴀᴛᴇᴅ ʙʏ OSCAR'
+
+/*⫘⫘⫘⫘ FAKE NYA ⫘⫘⫘⫘⫘*/
+global.fsizedoc = '1'.repeat(10)
+global.fpagedoc = '1'.repeat(10)
+
+/*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
+global.stickpack = 'YT: HendraXD'
+global.stickauth = `©  Hendra-Botz-MD\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
+global.packname = 'By Hendra-Botz-MD'
+
 
 global.multiplier = 38 // The higher, The harder levelup
 
-/*============== EMOJI ==============*/
+/*⫘⫘⫘⫘ GLOBAL EMOJI ⫘⫘⫘⫘⫘*/
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
@@ -420,6 +555,63 @@ global.rpg = {
   }
 }
 
+
+global.fpay = {
+	key: {
+		remoteJid: '0@s.whatsapp.net',
+		fromMe: false,
+		id: 'HendraXD',
+		participant: '0@s.whatsapp.net'
+	},
+	message: {
+		requestPaymentMessage: {
+			currencyCodeIso4217: "USD",
+			amount1000: 999999999,
+			requestFrom: '0@s.whatsapp.net',
+			noteMessage: {
+				extendedTextMessage: {
+					text: 'Hay kak👋'
+				}
+			},
+			expiryTimestamp: 999999999,
+			amount: {
+				value: 91929291929,
+				offset: 1000,
+				currencyCode: "USD"
+			}
+		}
+	}
+}
+global.fpayment = (m) => {
+	let key = {
+		key: {
+		remoteJid: '0@s.whatsapp.net',
+		fromMe: false,
+		id: 'HendraXD',
+		participant: '0@s.whatsapp.net'
+	},
+	message: {
+		requestPaymentMessage: {
+			currencyCodeIso4217: "USD",
+			amount1000: 999999999,
+			requestFrom: (m !== null && m !== undefined) ? m.sender : '0@s.whatsapp.net',
+			noteMessage: {
+				extendedTextMessage: {
+					text: (m !== null && m !== undefined) ? m.text : 'Subs YT: HendraXD'
+				}
+			},
+			expiryTimestamp: 999999999,
+			amount: {
+				value: 91929291929,
+				offset: 1000,
+				currencyCode: "USD"
+			}
+		}
+	}
+	}
+	return key
+}
+
 //------ JANGAN DIUBAH -----
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
@@ -428,7 +620,7 @@ watchFile(file, () => {
   import(`${file}?update=${Date.now()}`)
 })
 
-//------ FUNCTION
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}
+//------ FUNCTION 
+ function pickRandom(list) { 
+   return list[Math.floor(list.length * Math.random())] 
+ }
