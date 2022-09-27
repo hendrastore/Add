@@ -16,12 +16,13 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 • Berbicaralah yang sopan & tidak spam
 • Owner Hanya merespon yang berkaitan dengan BOT
 • No Telp`
-       {
-                    urlButton: {
-                        displayText: '📞 Author',
-                        url: '.menu',
-                    }
-                },
+ const listMessage = {
+  text: teks,
+  footer: null,
+  title: `${htki} *SOUND MENU* ${htka}`,
+  buttonText: "Menu !",
+  sections
+}
 
   let teks = 'Pilih dibawah kak ! o(〃＾▽＾〃)o'
 const sections = [
