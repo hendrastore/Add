@@ -2,34 +2,20 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://github.com/hendrastore/Add*
+let str = `◪ 📮 *SCRIPT BOT*
+│ *Script :* 
+│ ╰ https://github.com/hendrastore/Add
+│ *Base :* 
+│ ╰ https://github.com/Fokusdotid/Family-MD
+╰──────────═┅═──────────
+`,`📍 *N o t e :* 
+• Jangan lupa minta izin owner sebelum menggunakan scriptnya kak!
+• Jangan Lupa kasih star & kasih credit
 
-Pengen mentahan nya ?
-Nih ada santai bro....
-https://github.com/hendrastore/Add
-
-Mau Yang No Error Script Bot nya, Gas Cek Video YT :
-https://github.com/hendrastore/Add
-
-Pengen yang udah di recode oleh owner?
-Script bot ini dijual bila kalian mau bisa chat owner
-
-wa.me/6285794152433`
-let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
-let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://github.com/hendrastore/Add",
-    mediaType: "VIDEO",
-    description: "https://youtu.be/g9uLzcCOT20", 
-    title: 'Hendra-Botz-MD',
-    body: wm,
-    thumbnail: thumb,
-    sourceUrl: sgc
-  }
-  } }) 
-          }
-handler.help = ['source code']
+Official By @${'0'.split('@')[0]}
+Powered By @${`${global.owner[0]}`.split('@')[0]}`, 'Pemilik Bot', '#owner')
+handler.help = ['sourcecode']
 handler.tags = ['info']
-handler.command =  /^(script|sc)$/i
+handler.command = /^(sourcecode|sc|scbot|script|github)$/i
 
-export default handler
+module.exports = handler
