@@ -188,9 +188,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   }
   if (teks == 'nocategory') tags = {
     '': 'No Category'
-}
-  if (teks == 'store') tags = {
-    '': 'info'
   }
   try {
   	// DEFAULT MENU
