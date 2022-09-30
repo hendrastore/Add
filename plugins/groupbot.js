@@ -29,6 +29,6 @@ await conn.sendMessage(m.chat, listMessage, { quoted: m})
 
 handler.help = ['store']
 handler.tags = ['info']
-handler.command = /^(groupbot)$/i
+handler.command = /^(store)$/i
 
 export default handler
