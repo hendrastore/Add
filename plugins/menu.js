@@ -240,6 +240,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	title: `${htki} SUPPORT ${htka}`,
 	rows: [
 	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+	    ${pmenus} SEWA`, rowId: ".store", description: "Menampilkan list store"},
 	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
 	    {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
 	]
@@ -273,6 +274,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
 	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
 	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+	{title: `❓ ${pmenus} store`, rowId: ".? store", description: "Fitur store untuk membeli okep:v!"},
 	]
   },
 ]
