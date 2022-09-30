@@ -220,11 +220,15 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     let mpt = clockString(_mpt)
       const sections = [
    {
-	title: `${htki} MAIN ${htka}`,
+	title: `┄┄┄┄┅┅| MAIN |┅┅┄┄┄┄`,
 	rows: [
-	    {title: `⚡ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
-	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-	    {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
+	    {title: `📛 ${pmenus} INFO BOT`, rowId: ".info", description: "╰► Menampilkan kecepatan respon "},
+	    {title: `💌 ${pmenus} OWNER`, rowId: ".owner", description: "╰► Menampilkan List owner "},
+	    {title: `📔 ${pmenus} SCRIPT`, rowId: ".sc", description: `╰► Source Code ${namebot}`},
+	{title: `🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "╰► Request fitur "},
+	{title: `👥 ${pmenus} Sosial Media & Group Bot`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+	{title: `👥 ${pmenus} Sosial Media & Owner`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+    {title: `👥 ${pmenus} Sosial Media & Group Bot`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
 	]
     },{
 	title: `${htki} SUPPORT ${htka}`,
