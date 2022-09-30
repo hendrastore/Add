@@ -189,9 +189,14 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (teks == 'nocategory') tags = {
     '': 'No Category'
   }
-  if (teks == '.virtex') tags = {
-    '': 'Menu virtex jangan di mainkan:v'
+  if (teks == 'list') tags = {
+    '': 'store'
   }
+  if (teks == 'listpc') tags = {
+    '': 'owner'
+  }
+  if (teks == 'botstats') tags = {
+    '': 'info'
   try {
   	// DEFAULT MENU
       let dash = global.dashmenu
@@ -229,9 +234,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `💌 ${pmenus} OWNER`, rowId: ".owner", description: "╰► Menampilkan List owner "},
 	    {title: `📔 ${pmenus} SCRIPT`, rowId: ".sc", description: `╰► Source Code ${namebot}`},
 	{title: `🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "╰► Request fitur "},
-	{title: `👥 ${pmenus} Sosial Media & Belum gw edit!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
-	{title: `👥 ${pmenus} Sosial Media & Belum gw edit!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
-    {title: `👥 ${pmenus} Sosial Media & Belum gw edit!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+	{title: `👥 ${pmenus} Sosial Media & Group Bot`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
 	]
     },{
 	title: `${htki} SUPPORT ${htka}`,
@@ -239,6 +242,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
 	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
 	    {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+	    {title: `🔖 ${pmenus} STORE`, rowId: ".store", description: "Menampilkan list harga store"},
 	]
 	},{
 	title: `${htki} MENU ${htka}`,
@@ -270,7 +274,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
 	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
 	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
-	{title: `❓ ${pmenus} Virtex cuy`, rowId: ".? jangan di mainkan", description: "Fitur Virtex!"},
+	{title: `❓ ${pmenus} STORE`, rowId: ".? STORE", description: "Fitur STORE!"},
 	]
   },
 ]
@@ -511,7 +515,7 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n By Wh-Mods-Dev',
+            footer: titlebot + '\n By HendraBotz-MD',
             templateButtons: [
                 {
                     urlButton: {
