@@ -189,6 +189,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (teks == 'nocategory') tags = {
     '': 'No Category'
   }
+  if (teks == '.virtex') tags = {
+    '': 'Menu virtex jangan di mainkan:v'
+  }
   try {
   	// DEFAULT MENU
       let dash = global.dashmenu
@@ -226,9 +229,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `💌 ${pmenus} OWNER`, rowId: ".owner", description: "╰► Menampilkan List owner "},
 	    {title: `📔 ${pmenus} SCRIPT`, rowId: ".sc", description: `╰► Source Code ${namebot}`},
 	{title: `🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "╰► Request fitur "},
-	{title: `👥 ${pmenus} Sosial Media & Group Bot`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
-	{title: `👥 ${pmenus} Sosial Media & Owner`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
-    {title: `👥 ${pmenus} Sosial Media & Group Bot`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+	{title: `👥 ${pmenus} Sosial Media Owner & `, rowId: ".sosialmedia", description: "╰► Belum gw kasih lagi males:v},
+	{title: `👥 ${pmenus} Sosial Media & Owner`, rowId: ".Belum gw kasih lagi males:v", description: "╰► Belum gw kasih lagi males:v"},
+    {title: `👥 ${pmenus} Belum gw kasih lagi males:v`, rowId: ".Belum gw kasih lagi males:v", description: "╰► Belum gw kasih lagi males:v"},
 	]
     },{
 	title: `${htki} SUPPORT ${htka}`,
@@ -266,7 +269,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
 	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
 	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+	{title: `❓ ${pmenus} No Category`, rowId: ".? virtex", description: "Fitur virtex jangan di mainkan!"},
 	]
   },
 ]
@@ -302,7 +305,7 @@ const listMessage = {
   footer: '📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
-  buttonText: `Pencet aja tod ⎙`, 
+  buttonText: `PENCET AJA TOD ⎙`, 
   sections
 }
   if (teks == '404') {
