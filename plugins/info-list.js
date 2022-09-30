@@ -6,34 +6,34 @@ const sections = [
    {
 	title: `✃ STATS`,
 	rows: [
-	    {title: "ଘ 📊Test Speed", rowId: '.testspeed', description: '╰►Test Speed SXYO BOT' },
+	    {title: "ଘ 📊Test Speed", rowId: '.testspeed', description: '╰►Test Speed Hendra BOT' },
 	    {title: "ଘ 📉Stats Server", rowId: '.statserver', description: '╰►Status server BOT' },
 	    {title: "ଘ 💻Bot Info", rowId: '.botinfo', description: '╰►Info Server BOT' },
-	{title: "ଘ 👤Nama Creator", rowId: '.nameown', description: '╰►Developer SXYO BOT' },
-	{title: "ଘ 💰Donasi", rowId: '.donasi', description: '╰►Support SXYO Agar on 24 Jam' },
+	{title: "ଘ 👤Nama Creator", rowId: '.nameown', description: '╰►Developer Hendra BOT' },
+	{title: "ଘ 💰Donasi", rowId: '.donasi', description: '╰►Support Hendra Agar on 24 Jam' },
 	]
     }, {
     title: `✃ INFO`,
 	rows: [
-	    {title: "ଘ 📖Rules", rowId: '.rules', description: '╰►S&K SXYO BOT' },
+	    {title: "ଘ 📖Rules", rowId: '.rules', description: '╰►S&K Hendra BOT' },
 	    {title: "ଘ ⛔No Menu", rowId: '', description: '╰►No menu' },
 	    {title: "ଘ 📑Event", rowId: '.event', description: '╰►Event Dari Kami' },
-	{title: "ଘ ⚡Speed", rowId: '.speed', description: '╰►Speed SXYO BOT' },
-	{title: "ଘ 💵Sewa BOT", rowId: '.sewa', description: '╰►Sewa SXYO BOT' },
-	{title: "ଘ 🗣️Request Fitur", rowId: '.request', description: '╰►Request FITUR SXYO BOT' },
-	{title: "ଘ 🌏Lokasi BOT", rowId: '.loc2', description: '╰►Lokasi SXYO BOT' },
-	{title: "ଘ 🧰Version Bot", rowId: '.cekversi', description: '╰►Versi SXYO BOT' },
-	{title: "ଘ 🤖Sapa Bot", rowId: '.salken', description: '╰►Menyapa SXYO BOT' },
+	{title: "ଘ ⚡Speed", rowId: '.speed', description: '╰►Speed Hendra BOT' },
+	{title: "ଘ 💵Sewa BOT", rowId: '.sewa', description: '╰►Sewa Hendra BOT' },
+	{title: "ଘ 🗣️Request Fitur", rowId: '.request', description: '╰►Request FITUR Hendra BOT' },
+	{title: "ଘ 🌏Lokasi BOT", rowId: '.loc2', description: '╰►Lokasi Hendra BOT' },
+	{title: "ଘ 🧰Version Bot", rowId: '.cekversi', description: '╰►Versi Hendra BOT' },
+	{title: "ଘ 🤖Sapa Bot", rowId: '.salken', description: '╰►Menyapa Hendra BOT' },
 	]
     },{
     title: `✃ INFO BOT`,
 	rows: [
-	    {title: "ଘ 🧰Version Bot", rowId: '.cekversi', description: '╰►Versi SXYO BOT' },
-	    {title: "ଘ 🌏Lokasi BOT", rowId: '.loc2', description: '╰►Lokasi SXYO BOT' },
-	{title: "ଘ 🤖Sapa Bot", rowId: '.salken', description: '╰►Menyapa SXYO BOT' },
-	{title: "ଘ ⚡Speed Bot", rowId: '.speed', description: '╰►Speed SXYO BOT' },
+	    {title: "ଘ 🧰Version Bot", rowId: '.cekversi', description: '╰►Versi Hendra BOT' },
+	    {title: "ଘ 🌏Lokasi BOT", rowId: '.loc2', description: '╰►Lokasi Hendra BOT' },
+	{title: "ଘ 🤖Sapa Bot", rowId: '.salken', description: '╰►Menyapa Hendra BOT' },
+	{title: "ଘ ⚡Speed Bot", rowId: '.speed', description: '╰►Speed Hendra BOT' },
 	{title: "ଘ 🔧 Customer Service", rowId: '.complaint', description: '╰►Laporkan keluhan mu di sini...' },
-	{title: "ଘ 📊Status Bot", rowId: '.botstats', description: '╰►Sistem SXYO BOT' },
+	{title: "ଘ 📊Status Bot", rowId: '.botstats', description: '╰►Sistem Hendra BOT' },
 	]
     },
 ]

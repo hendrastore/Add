@@ -188,15 +188,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   }
   if (teks == 'nocategory') tags = {
     '': 'No Category'
-  }
-  if (teks == 'list') tags = {
-    '': 'store'
-  }
-  if (teks == 'listpc') tags = {
-    '': 'owner'
-  }
-  if (teks == 'botstats') tags = {
-    '': 'info'
   try {
   	// DEFAULT MENU
       let dash = global.dashmenu
