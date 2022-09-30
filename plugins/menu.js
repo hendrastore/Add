@@ -188,6 +188,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   }
   if (teks == 'nocategory') tags = {
     '': 'No Category'
+  }
   try {
   	// DEFAULT MENU
       let dash = global.dashmenu
@@ -225,7 +226,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `💌 ${pmenus} OWNER`, rowId: ".owner", description: "╰► Menampilkan List owner "},
 	    {title: `📔 ${pmenus} SCRIPT`, rowId: ".sc", description: `╰► Source Code ${namebot}`},
 	{title: `🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "╰► Request fitur "},
-	{title: `👥 ${pmenus} Sosial Media & Group Bot`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+	{title: `👥 ${pmenus} Sosial Media & Belum gw edit!!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+	{title: `👥 ${pmenus} Sosial Media & Belum gw edit!!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+    {title: `👥 ${pmenus} Sosial Media & Belum gw edit!!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+    {title: `👥 ${pmenus} Sosial Media & Belum gw edit!!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+    {title: `👥 ${pmenus} Sosial Media & Belum gw edit!!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
+    {title: `👥 ${pmenus} Sosial Media & Belum gw edit!!`, rowId: ".sosialmedia", description: "╰► terimakasih buat yang telah suport bot ini"},
 	]
     },{
 	title: `${htki} SUPPORT ${htka}`,
@@ -233,7 +239,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
 	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
 	    {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
-	    {title: `🔖 ${pmenus} STORE`, rowId: ".store", description: "Menampilkan list harga store"},
 	]
 	},{
 	title: `${htki} MENU ${htka}`,
@@ -265,7 +270,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
 	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
 	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
-	{title: `❓ ${pmenus} STORE`, rowId: ".? STORE", description: "Fitur STORE!"},
 	]
   },
 ]
@@ -506,7 +510,7 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n By HendraBotz-MD',
+            footer: titlebot + '\n By Wh-Mods-Dev',
             templateButtons: [
                 {
                     urlButton: {
