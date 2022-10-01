@@ -2,15 +2,15 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 
 let handler = async (m, { conn, command, args, text}) => {
-if (command == 'store') {
+if (command == 'sewabot') {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let name = await conn.getName(who)
     let caption = `👋 Hai *${name} @${who.split("@")[0]}*,
 
-*• HI KAK WELCOME TO HENDRA STORE AMAN DAN TERPERCAYA •*
+*• SEWA BOT & UP TO PREMIUM •*
         
 ║ ┅ ๑————————————๑
-║┊ ⌲ *Nokos wa * = _Nokos hanya * (15 )_
+║┊ ⌲ *Hemat* = _5k/grup (1 minggu)_
 ║┊ ⌲ *Normal* = _15k/grup (1 bulan)_
 ║┊ ⌲ *Standar* = _45k/grup (3 bulan)_
 ║┊ ⌲ *Pro* = _65k/grup (5 bulan)_                                                                      ║┊ ⌲ *Permanen* = _80k/grup_
