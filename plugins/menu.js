@@ -276,7 +276,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	    {title: `🥞 〉ɞ 『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
 	{title: `✨ 〉ɞ 『 Rating 』`, rowId: ".rate", description: '✧ Jangan kasih rate rendah dong :/'},
 	{title: `🗳️ 〉ɞ 『 My Profile 』`, rowId: ".pp", description: '✧ Siapa ya kamu?...'},
-	{title: `〉ɞ💌 › 『〚 BOT STORE 〛』`, rowId: ".? store", description: "╰► Jangan Lupa Order kak<3 -𐑂"},
+	{title: `〉ɞ💌 › 『〚 BOT STORE 〛』`, rowId: ".store", description: "╰► Jangan Lupa Order kak<3 -𐑂"},
 	{title: `〉ɞ🎨 › 『〚 Lagi Iseng Banget 〛』`, rowId: ".? ", description: "╰► Lagi iseng doang ko kak<3 -𐑂"},
 	]
 	},{
