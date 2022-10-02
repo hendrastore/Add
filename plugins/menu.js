@@ -276,8 +276,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	    {title: `🥞 〉ɞ 『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
 	{title: `✨ 〉ɞ 『 Rating 』`, rowId: ".rate", description: '✧ Jangan kasih rate rendah dong :/'},
 	{title: `🗳️ 〉ɞ 『 My Profile 』`, rowId: ".pp", description: '✧ Siapa ya kamu?...'},
-	{title: `ഒ💌 › 𐐪-〚 BOT STORE 〛-𐑂`, rowId: ".? store", description: "╰► Jangan Lupa Order kak<3 -𐑂"},
-	{title: `ഒ🎨 › 𐐪-〚 Lagi Iseng Banget 〛-𐑂`, rowId: ".? ", description: "╰► Lagi iseng doang ko kak<3 -𐑂"},
+	{title: `〉ɞ💌 › 『〚 BOT STORE 〛』`, rowId: ".? store", description: "╰► Jangan Lupa Order kak<3 -𐑂"},
+	{title: `〉ɞ🎨 › 『〚 Lagi Iseng Banget 〛』`, rowId: ".? ", description: "╰► Lagi iseng doang ko kak<3 -𐑂"},
 	]
 	},{
 	title: `${htki} ▮𝗠𝗲𝗻𝘂 ${htka}`,
@@ -305,9 +305,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	{title: `⫹🧰️ › 𐐪-〚 Tools 〛-𐑂`, rowId: ".? tools", description: "╰► Butuh apa aja bot akan bantu -𐑂"},
 	{title: `️️⫹📊️ › 𐐪-〚 Info 〛-𐑂`, rowId: ".? info", description: "╰► Info lowker kak?..."},
 	{title: `⫹👩‍💻 › 𐐪-〚 Owner 〛-𐑂`, rowId: ".? owner", description: "╰► Yg bukan developer gausah nge klik fitur ini !"},
-	{title: `⫹🎨 › 𐐪-〚 Maker 〛-𐑂`, rowId: ".? maker", description: "╰► Bikin logo apa ya enaknya?"},
-	{title: `⫹💌 › 𐐪-〚 Store 〛-𐑂`, rowId: ".? store", description: "╰► Anak jebeh ya kamu kak?"},
-	{title: `⫹🔥 › 𐐪-〚 Virtex 〛-𐑂`, rowId: ".? virus", description: "╰► Jangan kak bahaya -𐑂"},
+	{title: `⫹🎨 › 𐐪-〚 Maker 〛-𐑂`, rowId: ".maker", description: "╰► Bikin logo apa ya enaknya?"},
+	{title: `⫹💌 › 𐐪-〚 Store 〛-𐑂`, rowId: ".store", description: "╰► Anak jebeh ya kamu kak?"},
+	{title: `⫹🔥 › 𐐪-〚 Virtex 〛-𐑂`, rowId: ".virus", description: "╰► Jangan kak bahaya -𐑂"},
 	]
     },{
 	title: `${htki} ▮𝗜𝗻𝗳𝗼 」 ${htka}`,
