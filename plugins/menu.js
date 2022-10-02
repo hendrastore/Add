@@ -307,7 +307,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	{title: `⫹👩‍💻 › 𐐪-〚 Owner 〛-𐑂`, rowId: ".? owner", description: "╰► Yg bukan developer gausah nge klik fitur ini !"},
 	{title: `⫹🎨 › 𐐪-〚 Maker 〛-𐑂`, rowId: ".maker", description: "╰► Bikin logo apa ya enaknya?"},
 	{title: `⫹💌 › 𐐪-〚 Store 〛-𐑂`, rowId: ".store", description: "╰► Anak jebeh ya kamu kak?"},
-	{title: `⫹🔥 › 𐐪-〚 Virtex 〛-𐑂`, rowId: ".virus", description: "╰► Jangan kak bahaya -𐑂"},
+	{title: `⫹🔥 › 𐐪-〚 Virtex 〛-𐑂`, rowId: ".virtex", description: "╰► Jangan kak bahaya -𐑂"},
 	]
     },{
 	title: `${htki} ▮𝗜𝗻𝗳𝗼 」 ${htka}`,
