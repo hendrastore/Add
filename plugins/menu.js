@@ -266,7 +266,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	{title: `💻)ഒ Bot Stats`, rowId: ".botinfo", description: "✧ Menampilkan Status 赤 Hendra-Botz-MD"},
 	{title: `📊)ഒ Test Speed`, rowId: ".testspeed", description: "✧ Test Install Speed BOT"},
 	{title: `⚡)ഒ Speed`, rowId: ".speed", description: "✧ Kecepatan Respon 赤 Hendra-Botz-MD..."},
-	{title: `⫹💌 › 𐐪-〚 sosiamedia 〛-𐑂`, rowId: ".? virus", description: "╰► Follow kak<3 -𐑂"},
+	{title: `ഒ💌 › 𐐪-〚 sosiamedia 〛-𐑂`, rowId: ".? virus", description: "╰► Follow kak<3 -𐑂"},
+	{title: `ഒ🎨 › 𐐪-〚 Lagi Iseng Banget 〛-𐑂`, rowId: ".? virus", description: "╰► Lagi iseng doang ko kak<3 -𐑂"},
 	]
     },{
 	title: `${htki} ▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」 ${htka}`,
