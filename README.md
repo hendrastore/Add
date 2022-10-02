@@ -7,14 +7,14 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 </p>
 <h1 align="center">Hendra-Botz-MD</h1>
 <p align="center">
-  <a href="https://github.com/hendrastore"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=WH+MODS+BOT+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+By+WH+MODS+DEV;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
+  <a href="https://github.com/hendrastore"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Hendra-Botz-MD+Multi+Device;Base+ori+by;BochilGaming+And+KANNACHAN;Recode+ByHendra-Botz-MD;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
 </p>
 
 <p align="center">
- <a href="#"><img title="Hendra-Botz-MD" src="https://img.shields.io/badge/-WH--MODS--BOT--MD-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+ <a href="#"><img title="Hendra-Botz-MD" src="https://img.shields.io/badge/Hendra-Botz-MDgreen?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/hendrastore"><img title="Author" src="https://img.shields.io/badge/AUTHOR-WH--MODS--BOT-green?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/hendrastore"><img title="Author" src="https://img.shields.io/badge/AUTHOR-Hendra-Botz-MD-green?style=for-the-badge&logo=github"></a>
     
 # Ambil Session Disini
 
@@ -63,9 +63,9 @@ Script ini untuk semua orang, bukan untuk Dijual. Jika dijual neraka menunggumu 
 
 ## `SETTING`
 
-- Owner Number [Here](https://github.com/WH-MODS-BOT/fix-bot-v2/blob/master/config.js#L1)
-- Owner Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v2/blob/master/config.js#L1)
-- Bot Name [Here](https://github.com/WH-MODS-BOT/fix-bot-v2/blob/master/config.js#L1)
+- Owner Number [Here](https://github.com/hendrastore/fix-bot-v2/blob/master/config.js#L1)
+- Owner Name [Here](https://github.com/hendrastore/fix-bot-v2/blob/master/config.js#L1)
+- Bot Name [Here](https://github.com/hendrastore/fix-bot-v2/blob/master/config.js#L1)
 ---------
 
 ## ```Heroku Buildpack```
@@ -83,7 +83,7 @@ $ pkg install git -y
 $ pkg install nodejs -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
-$ git clone https://github.com/WH-MODS-BOT/fix-bot-v2
+$ git clone https://github.com/hendrastore fix-bot-v2
 $ cd fix-bot-v2
 $ npm i 
 ```
