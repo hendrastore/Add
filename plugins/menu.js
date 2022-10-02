@@ -260,13 +260,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
    {
 	title: `${htki} ▮𝗦𝘁𝗮𝘁𝘂𝘀 」 ${htka}`,
 	rows: [
-	    {title: `📛)ഒ Info Bot`, rowId: ".info", description: "✧ Info nya HENDRA BOT ><"},
+	    {title: `📛)ഒ Info Bot`, rowId: ".info", description: "✧ Info nya Elaina BOT ><"},
 	    {title: `💌)ഒ Owner`, rowId: ".owner", description: "✧ Ini Room Developer ku ^~^"},
 	{title: `🗣)ഒ Request Fitur`, rowId: ".request", description: "✧ Request Fitur menarik ke BOT"},
-	{title: `💻)ഒ Bot Stats`, rowId: ".botinfo", description: "✧ Menampilkan Status 赤 HENDRA - BOT"},
+	{title: `💻)ഒ Bot Stats`, rowId: ".botinfo", description: "✧ Menampilkan Status 赤 ELAINA - BOT"},
 	{title: `📊)ഒ Test Speed`, rowId: ".testspeed", description: "✧ Test Install Speed BOT"},
-	{title: `⚡)ഒ Speed`, rowId: ".speed", description: "✧ Kecepatan Respon 赤 HENDRA - BOT..."},
-	{title: `📛)ഒ Info Bot`, rowId: ".info", description: "✧ Sosialmedia HENDRA BOT ><"},
+	{title: `⚡)ഒ Speed`, rowId: ".speed", description: "✧ Kecepatan Respon 赤 ELAINA - BOT..."},
 	]
     },{
 	title: `${htki} ▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」 ${htka}`,
@@ -329,55 +328,26 @@ let tek = `✧────···[ Dashboard ]···────✧
 *${ucapan()} ${conn.getName(m.sender)}*
 ╭━━━━━━━━━━━━━━━━┈─✧
 ┴
+│⬡ Aktif selama ${mpt}
+│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+│⬡ Prefix : [ ${_p} ]
+│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
+│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┬
-│${emot} 「 Hai Kak👋 」
-├❖ 「 ${conn.getName(m.sender)} 」
-├❖  Bagaimana Harimu? 😄
-├❖  Terima Kasih Telah Menggunakan Bot Kami
-│
 ├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *U s e r  I n f o 克* 」
-│${emot} *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-│${emot} *ᴛᴀɢs:* @${m.sender.split`@`[0]}
-│${emot} *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-│${emot} *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *S t a t u s  I n f o 比* 」
-│${emot} *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
-│${emot} *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
-│${emot} *ʟɪᴍɪᴛ:* ${usrs.limit}
-│${emot} *ʟᴇᴠᴇʟ:* ${usrs.level}
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│  「 *I n f o   B o t 比* 」
-│${emot} Aktif selama ${mpt}
-│${emot} Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│${emot} Prefix : [ ${_p} ]
-│${emot} *${Object.keys(global.db.data.users).length}* Pengguna
-│${emot} *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│${emot} *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│
-│ ▸ *IG :* @Hendra.mllb
-│ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
-┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
+│ ▸ *ᴀᴜᴛʜᴏʀ :* ʙᴏᴄʜɪʟɢᴀᴍɪɴɢ
+┴ ▸ *ᴏᴡɴᴇʀ :* ɪᴍ-HendraXd
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
 │ ʙᴇʀɪ ᴊᴇᴅᴀ ʏᴀʜ ᴋᴀᴋ ^ω^
-│
-├━━━━━━━━━━━━━━━━┈─⋆
-│${emot} *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-│${emot} *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-│${emot} ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 ╰━━━━━━━━━━━━━━━━┈─◂`
 const listMessage = {
   text: tek,
-  footer: `📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n\n${botdate}\n\n${wm2}`,
+  footer: wm2,
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `CLICK HERE ⎙`, 
+  buttonText: `Klik Disini ⎙`, 
   sections
 }
   if (teks == '404') {
@@ -631,7 +601,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/hendrastore'
+                        url: 'https://github.com/ImYanXiao/Elaina-MultiDevice'
                     }
                 },
                 {
