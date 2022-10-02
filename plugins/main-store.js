@@ -106,9 +106,9 @@ conn.reply(global.nomorown + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text 
   /* m.reply('☑️ Pesan Telah terkirim ke Owner!\n_*Menunggu confirmasi Dari Owner...*_')*/
 }
 
-handler.help = ['store1']
+handler.help = ['store']
 handler.tags = ['main']
-handler.command = /^(store1)$/i
+handler.command = /^(store)$/i
 
 export default handler
 
