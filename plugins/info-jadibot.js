@@ -10,14 +10,14 @@ let anu = `Hallo mypren 👋
 ⟩» *Kalau kakak mau jadi bot silahkan jasa run aja kak*
           
 ━━━〔 ıll *HARGA* llı 〕━━ꕥ
-⬡ *1 BULAN* 20.000
-⬡ *2 BULAN:* 30.000
-⬡ *PERMANEN:* 50.000
+⬡ *1 BULAN* 10.000
+⬡ *2 BULAN:* 15.000
+⬡ *PERMANEN:* 20.000
 ┗━━━━━━━━━━━━━━━━━━ꕥ
 ┏━━━〔 ıll *PAYMENT* llı 〕━━ꕥ
-⬡ *DANA:* ${dana}
-⬡ *GOPAY:* ${gopay}
-⬡ *OVO:* ${pulsa}
+⬡ *DANA:* 083181085070
+⬡ *GOPAY:* 083181085070
+⬡ *OVOV:* 083181085070
 ┗━━━━━━━━━━━━━━━━━━ꕥ
 ┏━━〔 ıll *RULES* llı 〕━ꕥ
 ⬡ [❗] *Dana yang sudah masuk tidak bisa di kembalikan*
@@ -28,7 +28,7 @@ Jika anda berminat hubungi nomor di bawah!!
 Terimakasih yang sudah mendonasikan untuk bot
 
 Contact person jasa run:
-wa.me/${numberowner} (Owner)
+wa.me/6285794152433${numberowner} (Owner)
 
 *Subscribe Youtube Owner*`
   conn.sendButton(m.chat, anu, syt, flaaa.getRandom() + teks, [['Donasi', '.donasi'], ['SewaBot', '.sewabot']], m)
