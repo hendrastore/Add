@@ -185,8 +185,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
  if (teks == 'nsfw') tags = {
     'nsfw': 'Nsfw'
   }
-  if (teks == 'store1') tags = {
-    '': 'main'
+  if (teks == 'nocategory') tags = {
+    '': 'No Category'
   }
   try {
   	// DEFAULT MENU
@@ -266,12 +266,13 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	{title: `💻)ഒ Bot Stats`, rowId: ".botinfo", description: "✧ Menampilkan Status 赤 Hendra-Botz-MD"},
 	{title: `📊)ഒ Test Speed`, rowId: ".testspeed", description: "✧ Test Install Speed BOT"},
 	{title: `⚡)ഒ Speed`, rowId: ".speed", description: "✧ Kecepatan Respon 赤 Hendra-Botz-MD..."},
+	{title: `⫹💌 › 𐐪-〚 sosiamedia 〛-𐑂`, rowId: ".? virus", description: "╰► Follow kak<3 -𐑂"},
 	]
     },{
 	title: `${htki} ▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」 ${htka}`,
 	rows: [
 	    {title: `🔖 〉ɞ 『 Sewa BOT 』`, rowId: ".sewa", description: "✧ Menampilkan list harga sewa BOT"},
-	    {title: `📑 〉ɞ 『 STORE BOT 』`, rowId: ".owner", description: "✧ Menampilkan list harga STORE BOT"},
+	    {title: `📑 〉ɞ 『 Buy Script BOT 』`, rowId: ".owner", description: "✧ Menampilkan list harga script BOT"},
 	    {title: `🌟 〉ɞ 『 UP Premium 』`, rowId: ".premium", description: "✧ Menampilkan list harga upgrade premium"},
 	    {title: `🥞 〉ɞ 『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
 	{title: `✨ 〉ɞ 『 Rating 』`, rowId: ".rate", description: '✧ Jangan kasih rate rendah dong :/'},
