@@ -41,7 +41,7 @@ let wibb = `${wktuwib}`
 
 let info = 
 `
-Belum Tau Mau Jual Apa:)
+*SELAMAT DATANG DI TOKO KAMI YA KAK<3*
 `
   /*  {title: "🔖 HEMAT", rowId: '.order *Paket:* HEMAT • Sewa', description: 'PRICE: ' + sh + 'k (1 minggu)' },
 	    {title: "🔖 NORMAL", rowId: '.order *Paket:* NORMAL • Sewa', description: 'PRICE: ' + sn + 'k (1 bulan)' },
@@ -49,27 +49,20 @@ Belum Tau Mau Jual Apa:)
 	{title: "🔖 PRO", rowId: '.order *Paket:* PRO • Sewa', description: 'PRICE: ' + sp + 'k (4 bulan)' },
 	{title: "🔖 VIP", rowId: '.order *Paket:* VIP • Sewa', description: 'PRICE: ' + sv + 'k (12 bulan)' },*/
 const sections = [{
-title: `⟥⟝⟢⟨ Sᴇᴡᴀ Bᴏᴛ ⟩⟣⟞⟤`,
-rows: [
-{title: "⟣⟨ HEMAT ⟩⟢",
-rowId: '.store sewabottt 7 Hari',
-description: 'Pʀɪᴄᴇ Sᴇᴡᴀ 5 ᴋ : 7 Hᴀʀɪ' },
-{title: "⟣⟨ NORMAL ⟩⟢",
-rowId: '.store sewabottt 15 Hari',
-description: 'Pʀɪᴄᴇ Sᴇᴡᴀ 10 ᴋ : 15 Hᴀʀɪ' },
-{title: "⟣⟨ STANDAR ⟩⟢",
-rowId: '.store sewabottt 30 hari',
-description: 'Pʀɪᴄᴇ Sᴇᴡᴀ 20 ᴋ : 30 Hᴀʀɪ' },
-{title: "⟣⟨ PRO ⟩⟢",
+title: `⟥⟝⟢⟨ READY NOKOS ALL NEGARA CUY ⟩⟣⟞⟤`,
+{title: "⟣⟨ NOKOS WHATSAPP ⟩⟢",
 rowId: '.store sewabottt 40 hari',
-description: 'Pʀɪᴄᴇ Sᴇᴡᴀ 25 ᴋ : 40 Hᴀʀɪ' },
+description: 'Pʀɪᴄᴇ NOKOS WHATSAPP 15 ᴋ : PERMANEN' },
 ]},
 {
-title: `${htjava} PREMIUM ✦-------`,
+title: `${htjava} YT PREMIUM ✦-------`,
 rows: [
-{title: "🌟 HEMAT", 
-rowId: '.order *Paket:* HEMAT • Premium', 
-description: 'PRICE: ' + ph + 'k (1 minggu)' },
+{title: "🌟 NONTON VIDEO TANPA IKLAN CUY", 
+rowId: '.order *Paket:* 1BULAN • Premium', 
+description: 'PRICE: '2'k (1 BULAN)' },
+{title: "🌟 NONTON VIDEO TANPA IKLAN CUY", 
+rowId: '.order *Paket:* 1BULAN • Premium', 
+description: 'PRICE: '4'k (2 BULAN)' },
 ]},
 ]
 
