@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
 let info = `
 *${htki} VIRUS ${htka}*
           
- 🔥BY FANGZ🔥
+ 🔥BY HENDRA🔥
           
                   
 –––––– *ᴋᴇʙɪᴊᴀᴋᴀɴ* ––––––
