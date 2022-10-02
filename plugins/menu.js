@@ -185,7 +185,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
  if (teks == 'nsfw') tags = {
     'nsfw': 'Nsfw'
   }
-  if (teks == 'store') tags = {
+  if (teks == 'store1') tags = {
     '': 'main'
   }
   try {
