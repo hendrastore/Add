@@ -666,7 +666,7 @@ const listMessage = {
     //------------------- 2BUTTON LOCATION
     conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
       ['🎏 ᴍᴇɴᴜ', `${_p}menu`],
-      ['⚡ ɪɴꜰᴏʙᴏᴛ', `${_p}ɪɴꜰᴏʙᴏᴛ`]
+      ['⚡ 😍ɪɴꜰᴏʙᴏᴛ', `${_p}infobot`]
     ], m, {asLocation: true})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
