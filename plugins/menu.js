@@ -271,13 +271,13 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	title: `${htki} ▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」 ${htka}`,
 	rows: [
 	    {title: `🔖 〉ɞ 『 Sewa BOT 』`, rowId: ".sewabot", description: "✧ Menampilkan list harga sewa BOT"},
-	    {title: `📑 〉ɞ 『 Buy Script BOT 』`, rowId: ".owner", description: "✧ Menampilkan list harga script BOT"},
-	    {title: `🌟 〉ɞ 『 UP Premium 』`, rowId: ".premium", description: "✧ Menampilkan list harga upgrade premium"},
+	    {title: `📑 〉ɞ 『 Cek Versi Bot sekarang 』`, rowId: ".cekversi", description: "✧ Menampilkan Versi Bot sekarang"},
+	    {title: `🌟 〉ɞ 『 KAMU LAGI GALAU?COBA PENCET INI:V 』`, rowId: ".soundgalau", description: "✧ Menampilkan SOUND GALAU"},
 	    {title: `🥞 〉ɞ 『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
 	{title: `✨ 〉ɞ 『 Rating 』`, rowId: ".rate", description: '✧ Jangan kasih rate rendah dong :/'},
 	{title: `🗳️ 〉ɞ 『 My Profile 』`, rowId: ".pp", description: '✧ Siapa ya kamu?...'},
 	{title: `〉ɞ💌 › 『〚 BOT STORE 〛』`, rowId: ".? store", description: "╰► Jangan Lupa Order kak<3 -𐑂"},
-	{title: `〉ɞ🎨 › 『〚 Lagi Iseng Banget 〛』`, rowId: ".? ", description: "╰► Lagi iseng doang ko kak<3 -𐑂"},
+	{title: `〉ɞ🎨 › 『〚 Lagu Ke Sukaan Owner ku<3 〛』`, rowId: "ytbot", description: "╰► Lagu Ke Sukaan Owner ku<3 -𐑂"},
 	]
 	},{
 	title: `${htki} ▮𝗠𝗲𝗻𝘂 ${htka}`,
