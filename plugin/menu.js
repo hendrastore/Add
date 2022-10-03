@@ -1,5 +1,5 @@
 // Script Ori By BochilGaming
-// Ditulis Ulang Oleh ImYanXiao
+// Ditulis Ulang Oleh Hendraa
 
 import { promises } from 'fs'
 import { join } from 'path'
@@ -276,7 +276,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	    {title: `🥞 〉ɞ 『 Get Hadiah 』`, rowId: ".daily", description: '✧ Mau hadiah nggak kak?... >.<'},
 	{title: `✨ 〉ɞ 『 Rating 』`, rowId: ".rate", description: '✧ Jangan kasih rate rendah dong :/'},
 	{title: `🗳️ 〉ɞ 『 My Profile 』`, rowId: ".pp", description: '✧ Siapa ya kamu?...'},
-	{title: `〉ɞ💌 › 『〚 BOT STORE 〛』`, rowId: ".store", description: "╰► Jangan Lupa Order kak<3 -𐑂"},
+	{title: `〉ɞ💌 › 『〚 BOT STORE 〛』`, rowId: ".? store", description: "╰► Jangan Lupa Order kak<3 -𐑂"},
 	{title: `〉ɞ🎨 › 『〚 Lagi Iseng Banget 〛』`, rowId: ".? ", description: "╰► Lagi iseng doang ko kak<3 -𐑂"},
 	]
 	},{
@@ -666,7 +666,7 @@ const listMessage = {
     //------------------- 2BUTTON LOCATION
     conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
       ['🎏 ᴍᴇɴᴜ', `${_p}menu`],
-      ['⚡ sᴘᴇᴇᴅᴛᴇsᴛ', `${_p}speedtest`]
+      ['⚡ ɪɴꜰᴏʙᴏᴛ', `${_p}infobot`]
     ], m, {asLocation: true})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
