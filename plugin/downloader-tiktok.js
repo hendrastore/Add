@@ -23,7 +23,7 @@ if (!args[0]) throw `Gunakan contoh ${usedPrefix}${command} https://www.tiktok.c
 ───── teks─ acocok dengan quali ─ ⇆ ◁ ㅤ ❚❚ ㅤ ▷ ㅤ ─ ─────ans─ Chulisansansansansans pirim ilangan ilangan.
 *Nama panggilan:* ${nama panggilan}
 *Deskripsi:* ${deskripsi}
-_HENDRA-MULTI-DEVICI-V1🍭_
+_© Hendra-Botz-MD🍭_
 `.trim(), m)
 //}
 /* menangkap {
