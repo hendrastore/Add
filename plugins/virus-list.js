@@ -38,8 +38,11 @@ const sections = [
     title: `✃ INFO`,
 	rows: [
 	    {title: "🔥Download WhatsApp Imune", rowId: '.waantivirus', description: 'Download WhatsApp Kebal' },
-	    {title: "🔥Virus Troli", rowId: '.virustroli', description: 'Subs Yt FANGZ BOT' },
-	    {title: "🔥Virus Power", rowId: '.powerlist', description: 'Hendraa' },
+	    {title: "🔥Virus Troli", rowId: '.virustroli', description: 'Hendraa' },
+	    {title: "🔥Virus Bug", rowId: '.sendbug', description: 'Hendraa' },
+	    {title: "🔥Virus text", rowId: '.santet', description: 'Hendraa' },
+	    {title: "🔥Virus Seranggc", rowId: '.seranggc', description: 'Hendraa' },
+	    {title: "🔥Terorbug", rowId: '.terorbug', description: 'Hendraa' },
 	    ]
         }, {
     title: `✃ BUY`,
