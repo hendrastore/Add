@@ -33,7 +33,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner, isPrems }) =
         console.log(e)
     }
 }
-handler.help = ['santet', 'svi'].map(v => v + ' <nomor>')
+handler.help = ['Hendra', 'svi'].map(v => v + ' <nomor>')
 handler.tags = ['premium','virus']
 handler.command = /^santet|svi$/i
 
