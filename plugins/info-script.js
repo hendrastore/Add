@@ -1,27 +1,23 @@
+//Credits Jangan Dihapus
+//Thanks To Papah-Chan
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `https://github.com/Hendraygy/kannacha'
-Pengen yang udah di recode oleh owner?
-Script bot ini dijual bila kalian mau bisa chat owner
-
-wa.me/6285794152433`
-let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
+let str = `*https://www.youtube.com/watch?v=uYG-l_i593Q*`
+let wibu = `https://hadi-api.herokuapp.com/api/loli` 
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "",
-    mediaType: "VIDEO",
-    description: "", 
-    title: 'Hendra-MultiDevice',
-    body: wm,
+conn.sendButtonDoc(m.chat, str, wm,'TERIMAKASIH HENDRA','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://www.youtube.com/watch?v=uYG-l_i593Q",
+    title: 'Hendra-Botz-MultiDevice',
+    body: 'want source code?',
     thumbnail: thumb,
-    sourceUrl: sgc
+    sourceUrl: sig
   }
   } }) 
           }
-handler.help = ['source code']
-handler.tags = ['info']
+handler.help = ['sc', 'script']
+handler.tags = ['info', 'main']
 handler.command =  /^(script|sc)$/i
 
 export default handler
