@@ -314,6 +314,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 	title: `${htki} ▮𝗜𝗻𝗳𝗼 」 ${htka}`,
 	rows: [
 	    {title: `💬 ∫ » Event «`, rowId: ".event", description: "✧ Nyari diskon? hahaha >.</"},
+	    {title: `💌 ∫ » SosialMedia «`, rowId: ".sosialmedia", description: '✧ SUPPORT GW ANJG BIAR SMGT'},
 	    {title: `🎳 ∫ » Version «`, rowId: ".cekversi", description: "✧ Mau ngapain ya?..."},
 	    {title: `🎁 ∫ » Referal «`, rowId: ".ref", description: "✧ Bagikan code undangan biar dapat hadiah...."},
 	    {title: `🔭 ∫ » Script «`, rowId: ".scbotini", description: `✧ Source Code ${namebot}`},
