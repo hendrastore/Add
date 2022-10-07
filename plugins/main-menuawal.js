@@ -99,7 +99,7 @@ let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 }
 } })*/
 let nowaa = '0'
-let nogww = '6285794152433'
+let nogww = '6285380166282'
 let nogwww = `@${nomorown1.split`@`[0]}`
 let nowa = `${nowaa.split`@`[0]}@s.whatsapp.net`
 let nogw = `${nogww.split`@`[0]}@s.whatsapp.net`
@@ -116,7 +116,7 @@ let knnt = `
 ⁛ BOT(BUILD-OPERATE-TRANSFER) adalah program komputer yang dijalankan di Whatsapp yang khusus dibuat untuk melakukan pekerjaan-pekerjaan otomatis, BOT Whatsapp dirancang sedemikian rupa sehingga dapat digunakan dengan nyaman, dan kemungkinan memiliki sedikit bug, Adanya fitur dari bot WhatsApp ini tentu akan membantu anda untuk bersenang senang, dll`
 let ᴛᴇs = `Pᴏᴡᴇʀ Bʏ ⬝ @${nomorwa.split`@`[0]}\nCʀᴇᴀᴛᴏʀ Bᴏᴛ ⬝ @${nomorown1.split`@`[0]}\n⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 conn.send2ButtonImg(m.chat, await genProfile(conn, m), konten, ᴛᴇs, but1, id1, but2, id2, m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://youtube.com/playlist?list=RDwHr45iW1AC8&playnext=1',
+    mediaUrl: 'https://facebook.com/kahfiofc',
     mediaType: 2, 
     description: sgc,
     title: "Hᴀʟᴏ Jᴀɴɢᴀɴ Lᴜᴘᴀ Bᴇʀsʏᴜᴋᴜʀ!!",
