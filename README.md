@@ -83,8 +83,8 @@ $ pkg install git -y
 $ pkg install nodejs -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
-$ git clone https://github.com/hendrastore fix-bot-v2
-$ cd fix-bot-v2
+$ git clone https://github.com/hendrastore/Add
+$ cd Add
 $ npm i 
 ```
 If error try using yarn instead of npm, see [here](https://github.com/BochilGaming/games-wabot/tree/multi-device#if-npm-install-failed--try--using-yarn-instead-of-npm)
