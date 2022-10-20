@@ -142,7 +142,7 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/WH-MODS-BOT/fix-bot-v2
+git clone https://github.com/hendrastore/Add
 cd fix-bot-v2
 npm install
 npm update
